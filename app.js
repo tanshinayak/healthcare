@@ -4,7 +4,7 @@ const path=require('path');
 const app=express();
 app.use(express.static(__dirname+'/public'));
 app.use('/home.html',(req,res,next)=>{
-    res.sendFile(path.join(__dirname,'home.html'));
+    res.sendFile(path.join(__dirname,'index.html'));
 });
 app.use('/doctor.html',(req,res,next)=>{
     res.sendFile(path.join(__dirname,'doctor.html'));
